@@ -1,0 +1,432 @@
+module PWM(LED, clk, reset);
+input clk;
+input reset;
+output LED;
+
+wire  [3:0] pwm_inp;
+wire  synth_net_111;
+wire  synth_net_112;
+
+wire  synth_net_113;
+wire  synth_net_114;
+wire  synth_net_115;
+
+wire  synth_net_116;
+wire  synth_net_117;
+wire  synth_net_118;
+
+wire  synth_net_119;
+wire  synth_net_120;
+wire  synth_net_121;
+
+wire  synth_net_122;
+wire  synth_net_123;
+wire  synth_net_124;
+
+wire  synth_net_125;
+wire  synth_net_126;
+wire  synth_net_127;
+
+wire  synth_net_128;
+wire  synth_net_129;
+wire  synth_net_130;
+
+wire  synth_net_131;
+wire  synth_net_132;
+wire  synth_net_133;
+
+wire  synth_net_134;
+wire  synth_net_135;
+wire  synth_net_136;
+
+wire  synth_net_137;
+wire  synth_net_138;
+wire  synth_net_139;
+
+wire  synth_net_221;
+wire  synth_net_222;
+wire  synth_net_223;
+
+wire  synth_net_224;
+wire  synth_net_225;
+wire  synth_net_226;
+
+wire  synth_net_227;
+wire  synth_net_228;
+wire  synth_net_229;
+
+wire  synth_net_230;
+wire  synth_net_231;
+wire  synth_net_232;
+
+wire  synth_net_233;
+wire  synth_net_234;
+wire  synth_net_235;
+
+wire  synth_net_236;
+wire  synth_net_237;
+wire  synth_net_238;
+
+wire  synth_net_239;
+wire  synth_net_240;
+wire  synth_net_241;
+
+wire  synth_net_242;
+wire  synth_net_243;
+wire  synth_net_244;
+
+wire  synth_net_245;
+wire  synth_net_246;
+wire  synth_net_247;
+
+wire  synth_net_302;
+wire  synth_net_303;
+wire  synth_net_304;
+
+wire  synth_net_305;
+wire  synth_net_306;
+wire  synth_net_307;
+
+wire  synth_net_308;
+wire  synth_net_309;
+wire  synth_net_310;
+
+wire  synth_net_311;
+wire  synth_net_312;
+wire  synth_net_313;
+
+wire  synth_net_314;
+wire  synth_net_315;
+wire  synth_net_316;
+
+wire  synth_net_317;
+wire  synth_net_318;
+wire  synth_net_319;
+
+wire  synth_net_320;
+wire  synth_net_321;
+wire  synth_net_322;
+
+wire  synth_net_323;
+wire  synth_net_324;
+wire  synth_net_325;
+
+wire  synth_net_326;
+wire  synth_net_327;
+wire  synth_net_328;
+
+wire  synth_net_345;
+wire  synth_net_346;
+wire  synth_net_347;
+
+wire  synth_net_348;
+wire  synth_net_349;
+wire  synth_net_350;
+
+wire  synth_net_363;
+wire  synth_net_364;
+wire  synth_net_365;
+
+wire  synth_net_366;
+wire  synth_net_375;
+wire  synth_net_376;
+
+wire  synth_net_377;
+wire  synth_net_378;
+wire  [26:0] cnt;
+
+wire  [3:0] pwm_cnt;
+wire  synth_net;
+wire  synth_net_0;
+wire  synth_net_1;
+
+wire  synth_net_2;
+wire  synth_net_3;
+wire  synth_net_4;
+wire  synth_net_5;
+
+wire  synth_net_6;
+wire  synth_net_7;
+wire  synth_net_8;
+wire  synth_net_9;
+
+wire  synth_net_10;
+wire  synth_net_11;
+wire  synth_net_12;
+wire  synth_net_13;
+
+wire  synth_net_14;
+wire  synth_net_15;
+wire  synth_net_16;
+wire  synth_net_17;
+
+wire  synth_net_18;
+wire  synth_net_19;
+wire  synth_net_20;
+wire  synth_net_21;
+
+wire  synth_net_22;
+wire  synth_net_23;
+wire  synth_net_24;
+wire  synth_net_25;
+
+wire  synth_net_26;
+wire  synth_net_27;
+wire  synth_net_28;
+wire  synth_net_29;
+
+wire  synth_net_30;
+wire  synth_net_32;
+wire  synth_net_34;
+ADD4 synth_ADD_0(.
+    in1({pwm_cnt[3], pwm_cnt[2], pwm_cnt[1], pwm_cnt[0]}), .in2({synth_net_345, 
+    synth_net_346, synth_net_347, synth_net_348}), .cin(synth_net_349), .out({
+    synth_net_363, synth_net_364, synth_net_365, synth_net_366}), .cout(
+    synth_net_350));
+ADD16 synth_ADD(.in1({cnt[15], cnt[14], cnt[13], cnt[12], 
+    cnt[11], cnt[10], cnt[9], cnt[8], cnt[7], cnt[6], cnt[5], cnt[4], cnt[3], 
+    cnt[2], cnt[1], cnt[0]}), .in2({synth_net_122, synth_net_123, synth_net_124
+    , synth_net_125, synth_net_126, synth_net_127, synth_net_128, synth_net_129
+    , synth_net_130, synth_net_131, synth_net_132, synth_net_133, synth_net_134
+    , synth_net_135, synth_net_136, synth_net_137}), .cin(synth_net_138), .out({
+    synth_net_232, synth_net_233, synth_net_234, synth_net_235, synth_net_236, 
+    synth_net_237, synth_net_238, synth_net_239, synth_net_240, synth_net_241, 
+    synth_net_242, synth_net_243, synth_net_244, synth_net_245, synth_net_246, 
+    synth_net_247}), .cout(synth_net));
+ADD8 synth_ADD_1(.in1({cnt[23], cnt[22]
+    , cnt[21], cnt[20], cnt[19], cnt[18], cnt[17], cnt[16]}), .in2({
+    synth_net_114, synth_net_115, synth_net_116, synth_net_117, synth_net_118, 
+    synth_net_119, synth_net_120, synth_net_121}), .cin(synth_net), .out({
+    synth_net_224, synth_net_225, synth_net_226, synth_net_227, synth_net_228, 
+    synth_net_229, synth_net_230, synth_net_231}), .cout(synth_net_0));
+ADD2 
+    synth_ADD_2(.in1({cnt[25], cnt[24]}), .in2({synth_net_112, synth_net_113}), 
+    .cin(synth_net_0), .out({synth_net_222, synth_net_223}), .cout(synth_net_1)
+    );
+ADD1 synth_ADD_3(.in1(cnt[26]), .in2(synth_net_111), .cin(synth_net_1), .
+    out(synth_net_221), .cout(synth_net_139));
+GND synth_GND_26(.out(
+    synth_net_111));
+GND synth_GND_27(.out(synth_net_112));
+GND synth_GND_28(.
+    out(synth_net_113));
+GND synth_GND_29(.out(synth_net_114));
+GND synth_GND_30
+    (.out(synth_net_115));
+GND synth_GND_31(.out(synth_net_116));
+GND 
+    synth_GND_32(.out(synth_net_117));
+GND synth_GND_33(.out(synth_net_118));
+
+    GND synth_GND_34(.out(synth_net_119));
+GND synth_GND_35(.out(synth_net_120)
+    );
+GND synth_GND_36(.out(synth_net_121));
+GND synth_GND_37(.out(
+    synth_net_122));
+GND synth_GND_38(.out(synth_net_123));
+GND synth_GND_39(.
+    out(synth_net_124));
+GND synth_GND_40(.out(synth_net_125));
+GND synth_GND_41
+    (.out(synth_net_126));
+GND synth_GND_42(.out(synth_net_127));
+GND 
+    synth_GND_43(.out(synth_net_128));
+GND synth_GND_44(.out(synth_net_129));
+
+    GND synth_GND_45(.out(synth_net_130));
+GND synth_GND_46(.out(synth_net_131)
+    );
+GND synth_GND_47(.out(synth_net_132));
+GND synth_GND_48(.out(
+    synth_net_133));
+GND synth_GND_49(.out(synth_net_134));
+GND synth_GND_50(.
+    out(synth_net_135));
+GND synth_GND_51(.out(synth_net_136));
+GND synth_GND_52
+    (.out(synth_net_138));
+GND synth_GND_57(.out(synth_net_345));
+GND 
+    synth_GND_58(.out(synth_net_346));
+GND synth_GND_59(.out(synth_net_347));
+
+    GND synth_GND_60(.out(synth_net_349));
+FF synth_FF(.d(synth_net_302), .clk(
+    clk), .q(cnt[26]));
+FF synth_FF_0(.d(synth_net_303), .clk(clk), .q(cnt[25])
+    );
+FF synth_FF_1(.d(synth_net_304), .clk(clk), .q(cnt[24]));
+FF synth_FF_2(.
+    d(synth_net_305), .clk(clk), .q(cnt[23]));
+FF synth_FF_3(.d(synth_net_306), 
+    .clk(clk), .q(cnt[22]));
+FF synth_FF_4(.d(synth_net_307), .clk(clk), .q(
+    cnt[21]));
+FF synth_FF_5(.d(synth_net_308), .clk(clk), .q(cnt[20]));
+FF 
+    synth_FF_6(.d(synth_net_309), .clk(clk), .q(cnt[19]));
+FF synth_FF_7(.d(
+    synth_net_310), .clk(clk), .q(cnt[18]));
+FF synth_FF_8(.d(synth_net_311), .
+    clk(clk), .q(cnt[17]));
+FF synth_FF_9(.d(synth_net_312), .clk(clk), .q(
+    cnt[16]));
+FF synth_FF_10(.d(synth_net_313), .clk(clk), .q(cnt[15]));
+FF 
+    synth_FF_11(.d(synth_net_314), .clk(clk), .q(cnt[14]));
+FF synth_FF_12(.d(
+    synth_net_315), .clk(clk), .q(cnt[13]));
+FF synth_FF_13(.d(synth_net_316), .
+    clk(clk), .q(cnt[12]));
+FF synth_FF_14(.d(synth_net_317), .clk(clk), .q(
+    cnt[11]));
+FF synth_FF_15(.d(synth_net_318), .clk(clk), .q(cnt[10]));
+FF 
+    synth_FF_16(.d(synth_net_319), .clk(clk), .q(cnt[9]));
+FF synth_FF_17(.d(
+    synth_net_320), .clk(clk), .q(cnt[8]));
+FF synth_FF_18(.d(synth_net_321), .
+    clk(clk), .q(cnt[7]));
+FF synth_FF_19(.d(synth_net_322), .clk(clk), .q(
+    cnt[6]));
+FF synth_FF_20(.d(synth_net_323), .clk(clk), .q(cnt[5]));
+FF 
+    synth_FF_21(.d(synth_net_324), .clk(clk), .q(cnt[4]));
+FF synth_FF_22(.d(
+    synth_net_325), .clk(clk), .q(cnt[3]));
+FF synth_FF_23(.d(synth_net_326), .
+    clk(clk), .q(cnt[2]));
+FF synth_FF_24(.d(synth_net_327), .clk(clk), .q(
+    cnt[1]));
+FF synth_FF_25(.d(synth_net_328), .clk(clk), .q(cnt[0]));
+FF 
+    synth_FF_26(.d(synth_net_375), .clk(clk), .q(pwm_cnt[3]));
+FF synth_FF_27(.d
+    (synth_net_376), .clk(clk), .q(pwm_cnt[2]));
+FF synth_FF_28(.d(synth_net_377
+    ), .clk(clk), .q(pwm_cnt[1]));
+FF synth_FF_29(.d(synth_net_378), .clk(clk), 
+    .q(pwm_cnt[0]));
+VCC synth_VCC_26(.out(synth_net_137));
+VCC synth_VCC_58(.
+    out(synth_net_348));
+CMP4 synth_CMP(.in1({pwm_cnt[3], pwm_cnt[2], pwm_cnt[1]
+    , pwm_cnt[0]}), .in2({pwm_inp[3], pwm_inp[2], pwm_inp[1], pwm_inp[0]}), .
+    equal(), .unequal(), .greater(), .lesser(LED));
+INV synth_NOT(.in(reset), .
+    out(synth_net_2));
+INV synth_NOT_0(.in(reset), .out(synth_net_3));
+INV 
+    synth_NOT_1(.in(reset), .out(synth_net_4));
+INV synth_NOT_2(.in(reset), .out
+    (synth_net_5));
+INV synth_NOT_3(.in(reset), .out(synth_net_6));
+INV 
+    synth_NOT_4(.in(reset), .out(synth_net_7));
+INV synth_NOT_5(.in(reset), .out
+    (synth_net_8));
+INV synth_NOT_6(.in(reset), .out(synth_net_9));
+INV 
+    synth_NOT_7(.in(reset), .out(synth_net_10));
+INV synth_NOT_8(.in(reset), .
+    out(synth_net_11));
+INV synth_NOT_9(.in(reset), .out(synth_net_12));
+INV 
+    synth_NOT_10(.in(reset), .out(synth_net_13));
+INV synth_NOT_11(.in(reset), .
+    out(synth_net_14));
+INV synth_NOT_12(.in(reset), .out(synth_net_15));
+INV 
+    synth_NOT_13(.in(reset), .out(synth_net_16));
+INV synth_NOT_14(.in(reset), .
+    out(synth_net_17));
+INV synth_NOT_15(.in(reset), .out(synth_net_18));
+INV 
+    synth_NOT_16(.in(reset), .out(synth_net_19));
+INV synth_NOT_17(.in(reset), .
+    out(synth_net_20));
+INV synth_NOT_18(.in(reset), .out(synth_net_21));
+INV 
+    synth_NOT_19(.in(reset), .out(synth_net_22));
+INV synth_NOT_20(.in(reset), .
+    out(synth_net_23));
+INV synth_NOT_21(.in(reset), .out(synth_net_24));
+INV 
+    synth_NOT_22(.in(reset), .out(synth_net_25));
+INV synth_NOT_23(.in(reset), .
+    out(synth_net_26));
+INV synth_NOT_24(.in(reset), .out(synth_net_27));
+INV 
+    synth_NOT_25(.in(reset), .out(synth_net_28));
+INV synth_NOT_26(.in(reset), .
+    out(synth_net_29));
+INV synth_NOT_27(.in(reset), .out(synth_net_30));
+INV 
+    synth_NOT_28(.in(reset), .out(synth_net_32));
+INV synth_NOT_29(.in(reset), .
+    out(synth_net_34));
+AND2 synth_AND_60(.in({synth_net_2, synth_net_221}), .
+    out(synth_net_302));
+AND2 synth_AND_61(.in({synth_net_3, synth_net_222}), .
+    out(synth_net_303));
+AND2 synth_AND(.in({synth_net_4, synth_net_223}), .out(
+    synth_net_304));
+AND2 synth_AND_62(.in({synth_net_5, synth_net_232}), .out(
+    synth_net_313));
+AND2 synth_AND_63(.in({synth_net_6, synth_net_233}), .out(
+    synth_net_314));
+AND2 synth_AND_64(.in({synth_net_7, synth_net_234}), .out(
+    synth_net_315));
+AND2 synth_AND_65(.in({synth_net_8, synth_net_235}), .out(
+    synth_net_316));
+AND2 synth_AND_66(.in({synth_net_9, synth_net_236}), .out(
+    synth_net_317));
+AND2 synth_AND_67(.in({synth_net_10, synth_net_237}), .out(
+    synth_net_318));
+AND2 synth_AND_68(.in({synth_net_11, synth_net_238}), .out(
+    synth_net_319));
+AND2 synth_AND_69(.in({synth_net_12, synth_net_239}), .out(
+    synth_net_320));
+AND2 synth_AND_70(.in({synth_net_13, synth_net_240}), .out(
+    synth_net_321));
+AND2 synth_AND_71(.in({synth_net_14, synth_net_241}), .out(
+    synth_net_322));
+AND2 synth_AND_72(.in({synth_net_15, synth_net_224}), .out(
+    synth_net_305));
+AND2 synth_AND_73(.in({synth_net_16, synth_net_242}), .out(
+    synth_net_323));
+AND2 synth_AND_74(.in({synth_net_17, synth_net_243}), .out(
+    synth_net_324));
+AND2 synth_AND_75(.in({synth_net_18, synth_net_244}), .out(
+    synth_net_325));
+AND2 synth_AND_76(.in({synth_net_19, synth_net_245}), .out(
+    synth_net_326));
+AND2 synth_AND_77(.in({synth_net_20, synth_net_246}), .out(
+    synth_net_327));
+AND2 synth_AND_78(.in({synth_net_21, synth_net_247}), .out(
+    synth_net_328));
+AND2 synth_AND_79(.in({synth_net_22, synth_net_225}), .out(
+    synth_net_306));
+AND2 synth_AND_80(.in({synth_net_23, synth_net_226}), .out(
+    synth_net_307));
+AND2 synth_AND_81(.in({synth_net_24, synth_net_227}), .out(
+    synth_net_308));
+AND2 synth_AND_82(.in({synth_net_29, synth_net_228}), .out(
+    synth_net_309));
+AND2 synth_AND_83(.in({synth_net_30, synth_net_229}), .out(
+    synth_net_310));
+AND2 synth_AND_84(.in({synth_net_32, synth_net_230}), .out(
+    synth_net_311));
+AND2 synth_AND_85(.in({synth_net_34, synth_net_231}), .out(
+    synth_net_312));
+AND2 synth_AND_86(.in({synth_net_25, synth_net_363}), .out(
+    synth_net_375));
+AND2 synth_AND_87(.in({synth_net_26, synth_net_364}), .out(
+    synth_net_376));
+AND2 synth_AND_88(.in({synth_net_27, synth_net_365}), .out(
+    synth_net_377));
+AND2 synth_AND_89(.in({synth_net_28, synth_net_366}), .out(
+    synth_net_378));
+endmodule
